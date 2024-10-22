@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/styles/globals.css";
+import Nav from "@/components/Nav";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,9 +28,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="main">
-          <div className="gradient"/>
+          <div className="gradient" />
         </div>
         <div className="app">
+          <Nav />
           {children}
         </div>
       </body>

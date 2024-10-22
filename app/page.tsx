@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Feed from "@/components/Feed";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <p className="desc text-center">
         Promptopia is an AI prompting tool for modern world to discover, create and share creative prompts.
       </p>
+      <Feed />
     </section>
   );
 }
